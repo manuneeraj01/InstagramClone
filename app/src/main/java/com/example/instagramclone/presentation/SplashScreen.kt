@@ -42,7 +42,7 @@ fun SplashScreen(navController: NavController, authViewModel: AuthenticationView
             }
         }
         else{
-            navController.navigate(Screens.LoginSplash.route){
+            navController.navigate(Screens.LoginScreen.route){
                 popUpTo(Screens.SplashScreen.route){
                     inclusive = true
                 }

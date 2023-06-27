@@ -7,7 +7,7 @@ interface AuthenticationRepository {
 
     fun isUserAuthenticatedInFirebase():Boolean
 
-    fun getFirebaseAuthState(): Flow<Boolean>
+    fun getFirebaseAuthState(): Flow<Response<Boolean>>
 
     fun firebaseSignIn(email:String, password:String):Flow<Response<Boolean>>
 
