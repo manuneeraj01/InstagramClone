@@ -50,7 +50,7 @@ fun InstagramCloneApp(navHostController: NavHostController, authenticationViewMo
             LoginScreen(navController = navHostController, viewModel = authenticationViewModel)
         }
         composable(route = Screens.SignUpScreen.route){
-            SignUpScreen()
+            SignUpScreen(navController = navHostController, viewModel = authenticationViewModel)
         }
         composable(route = Screens.SplashScreen.route){
             SplashScreen(navController = navHostController, authViewModel = authenticationViewModel)
